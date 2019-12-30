@@ -18,15 +18,10 @@ public class CrossWords {
 	private static List<Word> vocabulary;
 
 	public static void main(String[] args) {
-		vocabulary = loadFile("/Users/beast/Desktop/Cross Words/CrossWords/words.txt");
+		vocabulary = loadFile("/Users/desi/git/basic-crossword/CrossWords/words.txt");
 		clearVocabulary();
-		CrossWord newCrossWord = createCrossWord("зар");
+		CrossWord newCrossWord = createCrossWord("телефон");
 		newCrossWord.draw();
-
-		clearVocabulary();
-		CrossWord newCrossWord2 = createCrossWord(" зар");
-		newCrossWord2.draw();
-
 	}
 	
 	private static void clearVocabulary(){
